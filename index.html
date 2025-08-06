@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>The Build Crew</title>
+    <meta name="title" content="The Build Crew" />
+    <meta name="description" content="The Build Crew website" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/stock_4.jpg" />
+    <link rel="preload" as="image" href="./assets/images/stock_10.jpg" />
+    <link rel="preload" as="image" href="./assets/images/stock_9.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">The Build Crew</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span"> JP Nagar, Bangalore </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 8.00 am to 10.00 pm</span>
+        </div>
+
+        <a href="tel:+919538904012" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:thebuildcrew1@gmail.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/buildcrew_logo_vector.svg"
+            width="160"
+            height="50"
+            alt="The Build Crew - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/buildcrew_logo_vector.svg"
+              width="160"
+              height="50"
+              alt="The Build Crew - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Our Story</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Our Strength</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">How it works</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Offers</span>
+              </a>
+            </li>
+
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact us</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visit Us</p>
+
+            <address class="body-4">
+              JP Nagar, <br />
+              Bengaluru
+            </address>
+
+            <span class="span">Daily : 8.00 am to 10.00 pm</span>
+
+            <a href="mailto:thebuildcrew1@gmail.com" class="body-4 sidebar-link"
+              >thebuildcrew1@gmail.com</a
+            >
+
+            <div class="separator"></div>
+
+            <a
+              href="tel:+919538904012"
+              class="body-1 contact-number hover-underline"
+            >
+              +919538904012
+            </a>
+          </div>
+        </nav>
+
+        <a href="#" class="btn btn-secondary">
+          <span class="text text-1">Find An Advisor</span>
+
+          <span class="text text-2" aria-hidden="true">Find An Advisor</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/stock_4.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Trust & Skill
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                The Right Builder <br />
+                Verified and Delivered
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Find trustworthy, vetted builders and contractors in Benagaluru,
+                with zero guesswork
+              </p>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/stock_10.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Elegance & Serene
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Design Inspired by <br />
+                generations
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come look at us what we do, you'll like it
+              </p>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/stock_9.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Living Spaces
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Where every house <br />
+                tells a story
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                We will help build a home of your dreams
+              </p>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+        </section>
+
+        <!-- 
+        - #OUR STORY
+      -->
+
+        <section class="special-dish text-center" aria-labelledby="dish-label">
+          <div class="special-dish-content">
+            <div class="container">
+              <p class="section-subtitle label-2">Our Story</p>
+
+              <h2 class="headline-1 section-title">Build smart Bengaluru</h2>
+
+              <p class="section-text">
+                The Build Crew is a builder aggregator platform that connects
+                you with vetted professionals, saving you time, stress and
+                costly mistakes.
+              </p>
+            </div>
+          </div>
+          <div class="special-dish-banner">
+            <img
+              src="./assets/images/stock_1.jpg"
+              width="940"
+              height="900"
+              loading="lazy"
+              alt="special dish"
+              class="img-cover"
+            />
+          </div>
+        </section>
+
+        <section class="special-dish text-center" aria-labelledby="dish-label">
+          <div class="special-dish-banner">
+            <img
+              src="./assets/images/stock_8.jpg"
+              width="940"
+              height="900"
+              loading="lazy"
+              alt="special dish"
+              class="img-cover"
+            />
+          </div>
+
+          <div class="special-dish-content">
+            <div class="container">
+              <!-- <img
+                src="./assets/images/badge-1.png"
+                width="28"
+                height="41"
+                loading="lazy"
+                alt="badge"
+                class="abs-img"
+              /> -->
+
+              <p class="section-subtitle label-2">Our Expertise</p>
+
+              <h2 class="headline-1 section-title">Construction</h2>
+
+              <p class="section-text">
+                Whether you’re constructing a home, a commercial project, or
+                simply renovating, The Build Crew ensures you never deal with
+                unreliable contractors again. We verify, grade, and continuously
+                monitor builders — so you don’t have to. Perfect for homeowners,
+                NRIs, investors, and real estate developers.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #OUR STRENGTH
+      -->
+        <section class="section features text-center" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle label-2">Why Choose Us</p>
+
+            <h2 class="headline-1 section-title">Our Strength</h2>
+
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/vetted_professionals.svg"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Vetted Professionals</h3>
+
+                  <p class="label-1 card-text">
+                    Background-checked and approved by our expert panel
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/builder_grading.svg"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Builder Grading System</h3>
+
+                  <p class="label-1 card-text">
+                    Transparent quality scores based on real performance
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/portfolio_visits.svg"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Portfolio Visits</h3>
+
+                  <p class="label-1 card-text">
+                    See our past work, speak to past clients, clarify doubts
+                    with transparency
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/live_site_updates.svg"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Live Site Updates</h3>
+
+                  <p class="label-1 card-text">
+                    Track your site remotely with real-time photo logs
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/personal_support.svg"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Personal Support</h3>
+
+                  <p class="label-1 card-text">
+                    A dedicated team with you through every milestone
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/transparency.svg"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Transparency</h3>
+
+                  <p class="label-1 card-text">
+                    Ensure clarity with client-builder communication, reduce
+                    unneccessary issues
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #Offers
+      -->
+        <section class="section service text-center" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle label-2">Home and Commercial spaces</p>
+
+            <h2 class="headline-1 section-title">We offer top notch advice</h2>
+
+            <p class="section-text">
+              Our panel of renowed experts will help you make informed decisions
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/offers_2.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">REAL ESTATE</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/offers_1.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Appetizers"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">JOINT VENTURES</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/offers_3.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Drinks"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">INVESTMENTS</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #OUR EXPERTISE
+      -->
+
+        <!-- 
+        - #MENU
+      -->
+
+        <section class="section menu" aria-label="menu-label" id="menu">
+          <div class="container">
+            <h2 class="headline-1 section-title text-center">HOW IT WORKS</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/hiw_1.svg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover-hiw"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tell Us What You Need</a>
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Share your project details and budget preferences
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/hiw_2.svg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover-hiw"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title"
+                          >Get Matched with Vetted Pros</a
+                        >
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1">
+                      We shortlist the right builders based on your needs
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/hiw_3.svg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover-hiw"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title"
+                          >Visit Sites & Portfolios</a
+                        >
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1">
+                      See past work, speak to past clients, clarify doubts
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/hiw_4.svg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover-hiw"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Start with Confidence</a>
+                      </h3>
+                    </div>
+
+                    <p class="card-text label-1">
+                      We stay with you from kickoff to handover
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer section has-bg-image text-center">
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/buildcrew_logo_vector.svg"
+                width="160"
+                height="50"
+                loading="lazy"
+                alt="grilli home"
+              />
+            </a>
+
+            <address class="body-4">JP Nagar, Bangalore</address>
+
+            <a href="mailto:thebuildcrew1@gmail.com" class="body-4 contact-link"
+              >thebuildcrew1@gmail.com</a
+            >
+
+            <a href="tel:+88123123456" class="body-4 contact-link"
+              >Booking Request : +88-123-123456</a
+            >
+
+            <p class="body-4">Open : 09:00 am - 01:00 pm</p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <form action="" class="input-wrapper">
+              <div class="icon-wrapper">
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Contact Us</span>
+
+                <span class="text text-2" aria-hidden="true">Contact Us</span>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Facebook</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Instagram</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >How it works</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Our Panel</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
