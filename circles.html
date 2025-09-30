@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process Steps</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f3f4f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2.5rem 0;
+        margin: 0;
+      }
+
+      .container {
+        max-width: 84rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .title {
+        font-size: 2.25rem;
+        line-height: 1.25;
+        font-weight: 800;
+        color: #1f2937;
+        letter-spacing: -0.025em;
+      }
+
+      @media (min-width: 640px) {
+        .title {
+          font-size: 3rem;
+        }
+      }
+
+      .subtitle {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        color: #4b5563;
+        max-width: 42rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .grid-container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .card {
+        background-color: #ffffff;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card:hover {
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.5rem);
+      }
+
+      .image-container {
+        position: relative;
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 1.5rem;
+      }
+
+      /* New styles for responsive text container */
+      .responsive-text-box {
+        background-color: #062a47;
+        width: 100%;
+        height: 100%;
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      /* Responsive text styling */
+      .responsive-text {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: clamp(1rem, 5vw, 2rem);
+        line-height: 1;
+      }
+
+      .step-indicator {
+        position: absolute;
+        top: -1rem;
+        right: -1rem;
+        background-color: #062a47;
+        color: #ffffff;
+        border-radius: 9999px;
+        height: 2.5rem;
+        width: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.125rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      }
+
+      .step-indicator svg {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: #ffffff;
+      }
+
+      .step-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #1f2937;
+        margin-bottom: 0.5rem;
+      }
+
+      .step-description {
+        color: #4b5563;
+        line-height: 1.625;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen py-10">
+    <div class="container">
+      <!-- Title and Subtitle Section -->
+      <header class="header">
+        <h1 class="title">Our Process Explained</h1>
+        <p class="subtitle">
+          A simple breakdown of how we get things done, from start to finish.
+        </p>
+      </header>
+
+      <!-- Process Steps Grid with Timeline Layout -->
+      <div class="grid-container">
+        <!-- Step 1 Card -->
+        <div class="card">
+          <div class="image-container">
+            <div class="responsive-text-box">
+              <span class="responsive-text">IDEA</span>
+            </div>
+            <div class="step-indicator">1</div>
+          </div>
+          <h2 class="step-title">Discovery & Ideation</h2>
+          <p class="step-description">
+            We begin by understanding your needs and brainstorming creative
+            solutions to achieve your goals.
+          </p>
+        </div>
+
+        <!-- Step 2 Card -->
+        <div class="card">
+          <div class="image-container">
+            <div class="responsive-text-box">
+              <span class="responsive-text">PLAN</span>
+            </div>
+            <div class="step-indicator">2</div>
+          </div>
+          <h2 class="step-title">Strategy & Planning</h2>
+          <p class="step-description">
+            A detailed roadmap is crafted, outlining the project scope,
+            timeline, and key milestones.
+          </p>
+        </div>
+
+        <!-- Step 3 Card -->
+        <div class="card">
+          <div class="image-container">
+            <div class="responsive-text-box">
+              <span class="responsive-text">BUILD</span>
+            </div>
+            <div class="step-indicator">3</div>
+          </div>
+          <h2 class="step-title">Development & Creation</h2>
+          <p class="step-description">
+            Our team brings the plan to life, building and iterating on the
+            solution with precision.
+          </p>
+        </div>
+
+        <!-- Step 4 Card (Final step) -->
+        <div class="card">
+          <div class="image-container">
+            <div class="responsive-text-box">
+              <span class="responsive-text">LAUNCH</span>
+            </div>
+            <div class="step-indicator">4</div>
+          </div>
+          <h2 class="step-title">Launch & Support</h2>
+          <p class="step-description">
+            The final product is deployed, and we provide ongoing support to
+            ensure its success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{thebuildcrew.in}%{REQUEST_URI} [L,R=301]
+
+# Optional: Force www (uncomment to enable)
+# RewriteCond %{thebuildcrew.in} !^www\. [NC]
+# RewriteRule ^ https://www.%{thebuildcrew.in}%{REQUEST_URI} [L,R=301]

@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -41,18 +41,10 @@
   </head>
 
   <body id="top">
-    <!-- 
-    - #PRELOADER
-  -->
-
     <div class="preload" data-preaload>
       <div class="circle"></div>
       <p class="text">The Build Crew</p>
     </div>
-
-    <!-- 
-    - #TOP BAR
-  -->
 
     <div class="topbar">
       <div class="container">
@@ -90,17 +82,12 @@
       </div>
     </div>
 
-    <!-- 
-    - #HEADER
-  -->
-
     <header class="header" data-header>
       <div class="container">
         <a href="#home" class="logo">
           <img
+            class="img-cover-logo"
             src="./assets/images/buildcrew_logo_vector.svg"
-            width="250px"
-            height="100px"
             loading="lazy"
             alt="The Build Crew - Home"
           />
@@ -134,7 +121,7 @@
               <a href="#story" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
-                <span class="span">Our Story</span>
+                <span class="span">How It Works</span>
               </a>
             </li>
 
@@ -142,7 +129,7 @@
               <a href="#strength" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
-                <span class="span">Our Strength</span>
+                <span class="span">Story</span>
               </a>
             </li>
 
@@ -150,7 +137,7 @@
               <a href="#offers" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
-                <span class="span">Offers</span>
+                <span class="span">Strength</span>
               </a>
             </li>
 
@@ -158,15 +145,7 @@
               <a href="#howitworks" class="navbar-link hover-underline">
                 <div class="separator"></div>
 
-                <span class="span">How it works</span>
-              </a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#contact" class="navbar-link hover-underline">
-                <div class="separator"></div>
-
-                <span class="span">Contact us</span>
+                <span class="span">Contact Us</span>
               </a>
             </li>
           </ul>
@@ -214,13 +193,9 @@
 
     <main>
       <article>
-        <!-- 
-        - #Home
-      -->
-
         <section class="hero text-center" aria-label="home" id="home">
           <ul class="hero-slider" data-hero-slider>
-            <li class="slider-item" data-hero-slider-item>
+            <li class="slider-item active" data-hero-slider-item>
               <div class="slider-bg">
                 <img
                   src="./assets/images/stock_10.jpg"
@@ -230,22 +205,16 @@
                   class="img-cover"
                 />
               </div>
-
-              <p class="label-2 section-subtitle slider-reveal">
-                Elegance & Serene
-              </p>
-
+              '
               <h1 class="display-1 hero-title slider-reveal">
-                Design Inspired by <br />
-                generations
+                TRUST MEETS CRAFTMANSHIP
               </h1>
-
-              <p class="body-2 hero-text slider-reveal">
-                Come look at us what we do, you'll like it
+              <p class="headline-2">
+                SIMPLE, SAFE AND STRESS-FREE CONSTRUCTION
               </p>
             </li>
 
-            <li class="slider-item active" data-hero-slider-item>
+            <li class="slider-item" data-hero-slider-item>
               <div class="slider-bg">
                 <img
                   src="./assets/images/stock_4.jpg"
@@ -255,20 +224,10 @@
                   class="img-cover"
                 />
               </div>
-
-              <p class="label-2 section-subtitle slider-reveal">
-                Trust & Skill
-              </p>
-
               <h1 class="display-1 hero-title slider-reveal">
-                The Right Builder <br />
-                Verified and Delivered
+                THE RIGHT BUILDER <br />
+                VERIFIED AND VETTED
               </h1>
-
-              <p class="body-2 hero-text slider-reveal">
-                Find trustworthy, vetted builders and contractors in Benagaluru,
-                with zero guesswork
-              </p>
             </li>
 
             <li class="slider-item" data-hero-slider-item>
@@ -282,18 +241,10 @@
                 />
               </div>
 
-              <p class="label-2 section-subtitle slider-reveal">
-                Living Spaces
-              </p>
-
               <h1 class="display-1 hero-title slider-reveal">
-                Where every house <br />
-                tells a story
+                WHERE EVERY HOUSE <br />
+                TELLS A STORY
               </h1>
-
-              <p class="body-2 hero-text slider-reveal">
-                We will help build a home of your dreams
-              </p>
             </li>
           </ul>
 
@@ -314,9 +265,76 @@
           </button>
         </section>
 
-        <!-- 
-        - #OUR STORY
-      -->
+        <section
+          class="section menu section-shadow shadow"
+          aria-label="menu-label"
+          id="howitworks"
+        >
+          <div class="container">
+            <h2 class="headline-1 section-title text-center">HOW IT WORKS</h2>
+            <div class="container">
+              <!-- Process Steps Grid with Timeline Layout -->
+              <div class="grid-container">
+                <!-- Step 1 Card -->
+                <div class="card">
+                  <div class="image-container">
+                    <div class="responsive-text-box">
+                      <span class="responsive-text">IDEA</span>
+                    </div>
+                    <div class="step-indicator">1</div>
+                  </div>
+                  <h2 class="step-title">Tell Us What You Need</h2>
+                  <p class="step-description">
+                    Share your project details and budget preferences
+                  </p>
+                </div>
+
+                <!-- Step 2 Card -->
+                <div class="card">
+                  <div class="image-container">
+                    <div class="responsive-text-box">
+                      <span class="responsive-text">PLAN</span>
+                    </div>
+                    <div class="step-indicator">2</div>
+                  </div>
+                  <h2 class="step-title">Know your builder</h2>
+                  <p class="step-description">
+                    We shortlist the right builders based on your needs
+                  </p>
+                </div>
+
+                <!-- Step 3 Card -->
+                <div class="card">
+                  <div class="image-container">
+                    <div class="responsive-text-box">
+                      <span class="responsive-text">BUILD</span>
+                    </div>
+                    <div class="step-indicator">3</div>
+                  </div>
+                  <h2 class="step-title">Get matched with professionals</h2>
+                  <p class="step-description">
+                    See pervious projects, enquire with past and current
+                    clients.
+                  </p>
+                </div>
+
+                <!-- Step 4 Card (Final step) -->
+                <div class="card">
+                  <div class="image-container">
+                    <div class="responsive-text-box">
+                      <span class="responsive-text">LAUNCH</span>
+                    </div>
+                    <div class="step-indicator">4</div>
+                  </div>
+                  <h2 class="step-title">Where vison meets reality</h2>
+                  <p class="step-description">
+                    We stay with you from kickoff to handover
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section
           class="special-dish text-center section-shadow"
@@ -325,14 +343,21 @@
         >
           <div class="special-dish-content">
             <div class="container">
-              <p class="section-subtitle label-2">Our Story</p>
-
-              <h2 class="headline-1 section-title">Build smart Bengaluru</h2>
+              <h2 class="headline-1 section-title">We Vet, You Relax</h2>
 
               <p class="section-text">
-                The Build Crew is a builder aggregator platform that connects
-                you with vetted professionals, saving you time, stress and
-                costly mistakes.
+                The Build Crew is Bengaluru based verified builder aggregator
+                platform. <br />
+                We make finding the right builder simple, safe and stress free
+                <br />
+                Our platform doesn't just connect you with any contractor, it
+                matches you with professionals who are vetted, graded and
+                aligned to your project needs. <br />
+                Whether its your dream home, mid-rise apartment, or a custom
+                project. We focus on building trustworthy connections and
+                transparent partnesrships. <br />
+                With The Build Crew, you can finally say goodbye to uncertainty
+                and hello to consfident hassle-freee construction
               </p>
             </div>
           </div>
@@ -365,17 +390,6 @@
 
           <div class="special-dish-content">
             <div class="container">
-              <!-- <img
-                src="./assets/images/badge-1.png"
-                width="28"
-                height="41"
-                loading="lazy"
-                alt="badge"
-                class="abs-img"
-              /> -->
-
-              <p class="section-subtitle label-2">Our Expertise</p>
-
               <h2 class="headline-1 section-title">Construction</h2>
 
               <p class="section-text">
@@ -388,19 +402,13 @@
             </div>
           </div>
         </section>
-
-        <!-- 
-        - #OUR STRENGTH
-      -->
         <section
-          class="section features text-center section-shadow
-shadow"
-     "
+          class="section features text-center section-shadow shadow"
           aria-label="features"
           id="strength"
         >
           <div class="container">
-            <p class="section-subtitle label-2">Why Choose Us</p>
+            <!-- <p class="section-subtitle label-2">Why Choose Us</p> -->
 
             <h2 class="headline-1 section-title">Our Strength</h2>
 
@@ -529,251 +537,8 @@ shadow"
             </ul>
           </div>
         </section>
-
-        <!-- 
-        - #Offers
-      -->
-        <section
-          class="section service text-center section-shadow
-shadow"
-     "
-          aria-label="service"
-          id="offers"
-        >
-          <div class="container">
-            <p class="section-subtitle label-2">Home and Commercial spaces</p>
-
-            <h2 class="headline-1 section-title">We offer top notch advice</h2>
-
-            <p class="section-text">
-              Our panel of renowed experts will help you make informed decisions
-            </p>
-
-            <ul class="grid-list">
-              <li>
-                <div class="service-card">
-                  <a class="has-before hover:shine">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 285; --height: 336"
-                    >
-                      <img
-                        src="./assets/images/offers_2.jpg"
-                        width="285"
-                        height="336"
-                        loading="lazy"
-                        alt="Breakfast"
-                        class="img-cover"
-                      />
-                    </figure>
-                  </a>
-
-                  <div class="card-content">
-                    <h3 class="title-4 card-title">
-                      <a href="#">REAL ESTATE</a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="service-card">
-                  <a class="has-before hover:shine">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 285; --height: 336"
-                    >
-                      <img
-                        src="./assets/images/offers_1.jpg"
-                        width="285"
-                        height="336"
-                        loading="lazy"
-                        alt="Appetizers"
-                        class="img-cover"
-                      />
-                    </figure>
-                  </a>
-
-                  <div class="card-content">
-                    <h3 class="title-4 card-title">
-                      <a href="#">JOINT VENTURES</a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="service-card">
-                  <a class="has-before hover:shine">
-                    <figure
-                      class="card-banner img-holder"
-                      style="--width: 285; --height: 336"
-                    >
-                      <img
-                        src="./assets/images/offers_3.jpg"
-                        width="285"
-                        height="336"
-                        loading="lazy"
-                        alt="Drinks"
-                        class="img-cover"
-                      />
-                    </figure>
-                  </a>
-
-                  <div class="card-content">
-                    <h3 class="title-4 card-title">
-                      <a href="#">INVESTMENTS</a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- 
-        - #How It Works
-      -->
-
-        <section class="section menu section-shadow
-shadow"
-     " aria-label="menu-label" id="howitworks">
-          <div class="container">
-            <h2 class="headline-1 section-title text-center">HOW IT WORKS</h2>
-
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/hiw_1.svg"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="Greek Salad"
-                      class="img-cover-hiw"
-                    />
-                  </figure>
-
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Tell Us What You Need</a>
-                      </h3>
-                    </div>
-
-                    <p class="card-text label-1">
-                      Share your project details and budget preferences
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/hiw_2.svg"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="Lasagne"
-                      class="img-cover-hiw"
-                    />
-                  </figure>
-
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title"
-                          >Get Matched with Vetted Pros</a
-                        >
-                      </h3>
-                    </div>
-
-                    <p class="card-text label-1">
-                      We shortlist the right builders based on your needs
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/hiw_3.svg"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="Butternut Pumpkin"
-                      class="img-cover-hiw"
-                    />
-                  </figure>
-
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title"
-                          >Visit Sites & Portfolios</a
-                        >
-                      </h3>
-                    </div>
-
-                    <p class="card-text label-1">
-                      See past work, speak to past clients, clarify doubts
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="menu-card hover:card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 100; --height: 100"
-                  >
-                    <img
-                      src="./assets/images/hiw_4.svg"
-                      width="100"
-                      height="100"
-                      loading="lazy"
-                      alt="Tokusen Wagyu"
-                      class="img-cover-hiw"
-                    />
-                  </figure>
-
-                  <div>
-                    <div class="title-wrapper">
-                      <h3 class="title-3">
-                        <a href="#" class="card-title">Start with Confidence</a>
-                      </h3>
-                    </div>
-
-                    <p class="card-text label-1">
-                      We stay with you from kickoff to handover
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
       </article>
     </main>
-
-    <!-- 
-    - #FOOTER
-  -->
 
     <footer class="footer section has-bg-image text-center" id="contact">
       <div class="container">
@@ -855,12 +620,12 @@ shadow"
             </li>
             <li>
               <a href="#story" class="label-2 footer-link hover-underline"
-                >Our Story</a
+                >Story</a
               >
             </li>
             <li>
               <a href="#strength" class="label-2 footer-link hover-underline"
-                >Our Strength</a
+                >Strength</a
               >
             </li>
             <li>
@@ -878,10 +643,6 @@ shadow"
       </div>
     </footer>
 
-    <!-- 
-    - #BACK TO TOP
-  -->
-
     <a
       href="#top"
       class="back-top-btn active"
@@ -891,14 +652,8 @@ shadow"
       <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
     </a>
 
-    <!-- 
-    - custom js link
-  -->
     <script src="./assets/js/script.js"></script>
 
-    <!-- 
-    - ionicon link
-  -->
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
